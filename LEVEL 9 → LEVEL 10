@@ -1,0 +1,10 @@
+The password is stored in a file and can be read by extracting human-readable strings.
+
+->Login to Bandit Level 9:ssh bandit9@bandit.labs.overthewire.org -p 2220
+->List files:ls
+A file named data.txt is present.
+Extract readable strings and filter lines containing =:
+->strings data.txt | grep =
+The password is displayed.
+
+->Password for Level 10:FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
