@@ -1,0 +1,10 @@
+In this level, the password for the next level is stored in a file that is Base64 encoded.
+
+->Login to Bandit Level 10 using SSH:ssh bandit10@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit10.
+->List the files in the directory:ls
+A file named data.txt is present.
+Decode the Base64 encoded file using the base64 command:base64 -d data.txt
+The decoded output displays the password.
+
+->Password for Level 11:dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
