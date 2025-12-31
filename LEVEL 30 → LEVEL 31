@@ -1,0 +1,21 @@
+In this level, the password for the next level is stored in a Git repository and is hidden inside a Git tag.
+
+Login to Bandit Level 30 using SSH:ssh bandit30@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit30.
+
+Create a temporary directory to work in:
+
+-> mkdir /tmp/bandit30
+   cd /tmp/bandit30
+
+Clone the Git repository:
+-> git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+
+Change into the cloned repository:cd repo
+
+List the available Git tags:git tag
+A tag named secret is present.
+View the contents of the tag:git show secret
+The output reveals the password for the next level.
+
+Password for Level 31:OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt
