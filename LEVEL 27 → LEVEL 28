@@ -1,0 +1,25 @@
+There is a git repository at ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo via the port 2220. The password for the user bandit27-git is the same as for the user bandit27.
+
+Clone the repository and find the password for the next level.
+
+In this level, the password for the next level is stored in a Git repository served over SSH. The password for the Git user is the same as the current level’s password.
+
+Login to Bandit Level 27 using SSH:ssh bandit27@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit27.
+Create a temporary directory to work in:
+
+->mkdir /tmp/bandit27
+  cd /tmp/bandit27
+
+Clone the Git repository:git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+
+Change into the cloned repository:
+
+-> cd repo
+
+List the contents:ls
+Read the README file, which contains the password for the next level:
+-> cat README
+
+
+Password for Level 28: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
