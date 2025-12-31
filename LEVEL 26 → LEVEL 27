@@ -1,0 +1,22 @@
+In this level, the password for the next level is obtained from a Git repository that must be cloned using SSH.
+
+Login to Bandit Level 26 using SSH:ssh bandit26@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit26.
+Create a temporary working directory and move into it:
+
+->mkdir /tmp/bandit26
+  cd /tmp/bandit26
+Clone the Git repository using the provided SSH URL:
+-> git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+Move into the cloned repository:
+-> cd repo
+List the files in the repository:ls
+A file named README is present.
+Read the contents of the file:
+-> cat README
+The file contains the password for Bandit Level 27.
+
+
+Password for Level 27:upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+
+
