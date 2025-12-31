@@ -1,0 +1,10 @@
+In this level, the password for the next level is stored in a file where all letters have been rotated using ROT13 encryption.
+
+->Login to Bandit Level 11 using SSH:ssh bandit11@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit11.
+->List the files in the directory:ls
+A file named data.txt is present.
+Decode the ROT13 encrypted text using the tr command:cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+The decoded output displays the password.
+
+->Password for Level 12:7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
