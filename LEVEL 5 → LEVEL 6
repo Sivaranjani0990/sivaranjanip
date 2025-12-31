@@ -1,0 +1,16 @@
+LEVEL 5 → LEVEL 6
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+human-readable 1033 bytes in size not executable
+
+->Login to Bandit Level 5 using SSH:ssh bandit5@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit5.
+->List the files in the directory:ls
+A directory named inhere is present.
+->Move into the directory:cd inhere
+Search for files that match the given conditions using 
+->the find command:find . -type f -size 1033c ! -executable
+A file matching the criteria is found.
+->Read the contents of the file:cat ./maybehere07/.file2
+The file contains the password for Bandit Level 6.
+
+->Flag / Password for Level 6: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
