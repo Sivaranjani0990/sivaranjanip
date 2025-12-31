@@ -1,0 +1,17 @@
+In this level, the password for the next level is obtained from a cron job that runs periodically.
+
+Login to Bandit Level 21 using SSH:ssh bandit21@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit21.
+->List the cron job directory:ls /etc/cron.d
+A cron job file named cronjob_bandit22 is present.
+View the contents of the cron job file:
+->cat /etc/cron.d/cronjob_bandit22
+The cron job executes a script periodically.
+View the script to find where the password is stored:
+-> cat /usr/bin/cronjob_bandit22.sh
+The script writes the password to a temporary file.
+Read the temporary file:
+->cat /tmp/tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+
+->Password for Level 22:tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
