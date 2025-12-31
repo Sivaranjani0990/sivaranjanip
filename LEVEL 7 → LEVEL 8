@@ -1,0 +1,11 @@
+In this level, the password for the next level is stored in a file named data.txt next to the word “millionth”.
+
+->Login to Bandit Level 7 using SSH:ssh bandit7@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit7.
+->List the files in the directory:ls
+A file named data.txt is present.
+Search for the word millionth inside the file using grep:
+->grep millionth data.txt
+The command displays a line containing the word millionth followed by the password.
+
+->Password for Level 8:dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
