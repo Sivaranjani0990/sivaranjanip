@@ -1,0 +1,13 @@
+In this level, I logged into Bandit Level 1 using the password obtained from the previous level.
+Command used to login:
+
+-> ssh bandit1@bandit.labs.overthewire.org -p 2220
+After successful login, I was in the home directory of bandit1.
+To see the files present in the directory, 
+-> used:ls
+ found a file named - (dash).
+Since - is treated as a command, used ./- to access the file properly.
+Command used:cat ./-
+The file displayed the password for Bandit Level 2.
+
+Flag / Password for Level 2:263JGJPfgU6LtdEvgfWU1XP5yac29mFx
