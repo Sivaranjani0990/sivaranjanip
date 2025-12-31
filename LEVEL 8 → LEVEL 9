@@ -1,0 +1,11 @@
+In this level, the password for the next level is stored in a file named data.txt and is the only line of text that occurs once.
+
+->Login to Bandit Level 8 using SSH:ssh bandit8@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit8.
+->List the files in the directory:ls
+A file named data.txt is present.
+To find the unique line in the file, sort the contents and use the uniq command:
+->sort data.txt | uniq -u
+The command outputs the line that appears only once.
+
+->Password for Level 9:4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
