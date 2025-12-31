@@ -1,0 +1,14 @@
+In this level, the password for the next level is stored in a file that is gzip compressed.
+
+Login to Bandit Level 23 using SSH:ssh bandit23@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit23.
+->List the files in the directory:ls
+A file named data.txt.gz is present.
+Uncompress the file using gunzip:
+-> gunzip data.txt.gz
+Read the contents of the uncompressed file:
+-> cat data.txt
+The file contains the password for Bandit Level 24.
+
+
+->Password for Level 24:gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
