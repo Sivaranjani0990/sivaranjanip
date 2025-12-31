@@ -1,0 +1,12 @@
+In this level, the password for the next level is stored in a file where only the difference between two files matters.
+
+Login to Bandit Level 17 using SSH:ssh bandit17@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit17.
+->List the files in the directory:ls
+Two files named passwords.old and passwords.new are present.
+Compare the files using the diff command:
+->diff passwords.old passwords.new
+The output displays the line that differs, which contains the password for the next level.
+
+
+->Password for Level 18:x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
