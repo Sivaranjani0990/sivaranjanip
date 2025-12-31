@@ -1,4 +1,14 @@
 LEVEL 0:
 In This Level We need to connect remotely to their server using their given credentials by ssh
 
-command : ssh bandit0@bandit.labs.overthewire.org -p 2220
+command : ssh bandit0@bandit.labs.overthewire.org -p 2220 
+After login, I was in the home directory of bandit0.
+
+To check the files present in the directory, I used:
+   -> ls
+i found a file named readme.
+Then I opened the file using the cat command:
+  ->cat readme
+the file contained the password for Bandit Level 1.
+
+Flag / Password for Level 1: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
