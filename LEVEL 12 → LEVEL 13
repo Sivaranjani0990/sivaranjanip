@@ -1,0 +1,16 @@
+In this level, the password for the next level is stored in a file that has been compressed multiple times using different compression methods.
+
+->Login to Bandit Level 12 using SSH:ssh bandit12@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit12.
+->List the files in the directory:ls
+A file named data.txt is present.
+Create a temporary working directory and copy the file:
+->mkdir /tmp/bandit12
+->cp data.txt /tmp/bandit12
+->cd /tmp/bandit12
+->Convert the hexdump back to binary format:xxd -r data.txt > data
+Identify the file type and extract repeatedly using appropriate tools (gzip, bzip2, and tar) until the final text file is obtained.
+->Read the final extracted file:cat data
+The file contains the password for Bandit Level 13.
+
+->Password for Level 13:FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
