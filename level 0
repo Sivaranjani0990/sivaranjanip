@@ -1,0 +1,4 @@
+LEVEL 0:
+In This Level We need to connect remotely to their server using their given credentials by ssh
+
+command : ssh bandit0@bandit.labs.overthewire.org -p 2220
