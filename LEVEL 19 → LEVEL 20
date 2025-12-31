@@ -1,0 +1,11 @@
+In this level, the password for the next level is retrieved using a setuid binary.
+
+Login to Bandit Level 19 using SSH:ssh bandit19@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit19.
+->List the files in the directory:ls
+An executable file named bandit20-do is present.
+Run the binary to read the password file:
+->./bandit20-do cat /etc/bandit_pass/bandit20
+The output displays the password for the next level.
+
+->Password for Level 20:0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
