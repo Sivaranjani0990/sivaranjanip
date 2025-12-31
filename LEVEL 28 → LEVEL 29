@@ -1,0 +1,22 @@
+In this level, the password for the next level is stored in a Git repository served over SSH. The password for the Git user is the same as the current level’s password.
+
+Login to Bandit Level 28 using SSH:ssh bandit28@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit28.
+
+Create a temporary directory to work in:
+
+->mkdir /tmp/bandit28
+  cd /tmp/bandit28
+
+Clone the Git repository:
+-> git clone ssh://bandit28-git@localhost/home/bandit28-git/repo
+
+Change into the cloned repository:
+-> cd repo
+
+List the Git commit history to find where the password was present before being removed:git log
+Identify the commit where sensitive information was removed and inspect it:
+-> git show c086d11a00c0648d095d04c089786efef5e01264
+The output reveals the password for the next level.
+
+Password for Level 29:4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
