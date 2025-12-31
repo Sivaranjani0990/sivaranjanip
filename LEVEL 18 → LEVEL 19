@@ -1,0 +1,9 @@
+In this level, the password for the next level is printed immediately upon login, but the session closes automatically.
+
+Login to Bandit Level 18 using SSH:ssh bandit18@bandit.labs.overthewire.org -p 2220
+Since the password is displayed immediately, 
+use SSH with a command to capture it without opening an interactive session:
+->ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+The command outputs the password for the next level.
+
+Password for Level 19:cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
