@@ -1,0 +1,13 @@
+In this level, the password for the next level is obtained by interacting with a network service that requires the correct password to be sent to it.
+
+Login to Bandit Level 20 using SSH:ssh bandit20@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit20.
+An executable file named suconnect is present.
+Open one terminal and start listening on a port using nc:
+->nc -l 12345
+Open another terminal and execute the binary, passing the port number:
+-> ./suconnect 12345
+When prompted, send the current password through the listening port.
+The service returns the password for the next level.
+
+->Password for Level 21:EeoULMCra2q0dSkYj561DX7s1CpBuOBt
