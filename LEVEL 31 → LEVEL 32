@@ -1,0 +1,24 @@
+In this level, the password for the next level is obtained by pushing a file to a Git repository that enforces specific rules.
+
+Login to Bandit Level 31 using SSH:ssh bandit31@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit31.
+
+Create a temporary directory and clone the Git repository:
+
+-> mkdir /tmp/bandit31
+   cd /tmp/bandit31
+   git clone ssh://bandit32-git@localhost/home/bandit32-git/repo
+
+Change into the cloned repository:cd repo
+
+List the files in the repository:ls
+
+Read the instructions file:cat README.md
+Create a file named key.txt with any content:
+echo "test" > key.txt
+Add and commit the file:git add key.txt
+git commit -m "add key file"
+Push the commit to the repository:git push
+After a successful push, the server outputs the password for the next level.
+
+Password for Level 32:rmCBvG56y58BXzv98yZGd07ATVL5dW8y
