@@ -1,0 +1,27 @@
+In this level, the password for the next level is stored in a Git repository, but it is not present in the default branch. The password is available in a different branch.
+
+Login to Bandit Level 29 using SSH:ssh bandit29@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit29.
+
+Create a temporary directory to work in:
+
+->mkdir /tmp/bandit29
+  cd /tmp/bandit29
+
+Clone the Git repository:
+-> git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+
+Change into the cloned repository:
+-> cd repo
+
+List all available branches:git branch -a
+A branch named dev is present.
+
+Switch to the dev branch:git checkout dev
+List the files in the branch:ls
+
+Read the README file:
+-> cat README
+The file contains the password for the next level.
+
+Password for Level 30:qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
