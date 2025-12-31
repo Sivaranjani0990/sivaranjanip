@@ -1,0 +1,16 @@
+In this level, the password for the next level is obtained by brute‑forcing a 4‑digit PIN sent to a network service.
+
+Login to Bandit Level 24 using SSH:ssh bandit24@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit24.
+A service is running on localhost port 30002 that expects the correct password and a 4‑digit PIN.
+Create a loop to try all possible PIN combinations and send them to the service:
+
+-> for i in {0000..9999}
+   do
+    echo "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i"
+   done | nc localhost 30002
+
+After several attempts, the service returns the correct password for the next level.
+
+
+Password for Level 25:iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
