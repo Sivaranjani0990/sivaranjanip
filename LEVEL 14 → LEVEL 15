@@ -1,0 +1,9 @@
+In this level, the password for the next level is obtained by submitting the current password to a local service running on port 30000.
+
+->Login to Bandit Level 14 using SSH:ssh bandit14@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit14.
+Send the password to the local service using the nc command:
+echo MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS | nc localhost 30000
+The service returns the password for the next level.
+
+->Password for Level 15:8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
