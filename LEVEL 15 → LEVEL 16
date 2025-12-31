@@ -1,0 +1,9 @@
+In this level, the password for the next level is obtained by connecting to an SSL-encrypted service running on port 30001.
+
+Login to Bandit Level 15 using SSH:ssh bandit15@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit15.
+Connect to the SSL service using openssl:openssl s_client -connect localhost:30001
+When prompted, enter the current password.
+The service returns the password for the next level.
+
+->Password for Level 16:kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
