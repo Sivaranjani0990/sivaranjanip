@@ -1,0 +1,14 @@
+In this level, the password for the next level is obtained using SSH with a provided private key, but the login is restricted by a forced command.
+
+Login to Bandit Level 25 using SSH:ssh bandit25@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit25.
+->List the files in the directory:ls
+A private key file named bandit26.sshkey is present.
+Use the private key to attempt login to Bandit Level 26:ssh -i bandit26.sshkey bandit26@localhost
+The session exits immediately due to a restricted shell.
+Change the terminal window size to a very small dimension and reconnect to force the shell into an interactive mode.
+Once access is obtained, read the password file:
+-> cat /etc/bandit_pass/bandit26
+
+
+Password for Level 26:s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
