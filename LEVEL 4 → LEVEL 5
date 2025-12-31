@@ -1,0 +1,15 @@
+In this level, the password for the next level is stored in a file that is human-readable among several files.
+
+->Login to Bandit Level 4 using SSH:ssh bandit4@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit4.
+->List the files in the directory:ls
+A directory named inhere is present.
+->Move into the directory:cd inhere
+->List the files inside the directory:ls
+Multiple files with names -file00 to -file09 are present.
+->To determine which file is human-readable, use the file command:file *
+Among the listed files, one file is identified as ASCII text.
+->Read the contents of the human-readable file:cat ./-file07
+The file contains the password for Bandit Level 5.
+
+->Flag / Password for Level 5:4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
