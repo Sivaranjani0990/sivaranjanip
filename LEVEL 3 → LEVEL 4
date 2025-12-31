@@ -1,0 +1,13 @@
+In this level, the password is stored in a hidden file inside a directory.
+
+After logging in as bandit3, the home directory contained a folder named inhere.
+
+To move into that directory, the following
+->command was used:cd inhere
+To list all files including hidden files, 
+->the command used was:ls -a
+A hidden file named .hidden was found.
+To read the contents of the hidden file, the following
+->command was used:cat .hidden
+The file contained the password for the next level.
+->Flag / Password for Level 4:2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
