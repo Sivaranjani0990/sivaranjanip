@@ -1,0 +1,14 @@
+LEVEL 2:
+
+In this level, I logged in to bandit2 using the password obtained from the previous level.
+
+->Command used to login:ssh bandit2@bandit.labs.overthewire.org -p 2220
+After login, I was in the home directory of bandit2.
+To check the files present in the directory, 
+->used:ls
+Found a file named spaces in this filename.
+Since the filename contains spaces, used quotes to read it.
+->Command used:cat "spaces in this filename"
+The file displayed the password for the next level.
+
+->Flag / Password for Level 3:MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
