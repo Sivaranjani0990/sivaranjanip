@@ -1,0 +1,11 @@
+In this level, the password for the next level is obtained using SSH private key authentication.
+
+->Login to Bandit Level 13 using SSH:ssh bandit13@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit13.
+->List the files in the directory:ls
+A private key file named sshkey.private is present.
+->Use the private key to log in to Bandit Level 14:ssh -i sshkey.private bandit14@localhost
+After successful login, 
+->read the password file:cat /etc/bandit_pass/bandit14
+
+->Password for Level 14:MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
