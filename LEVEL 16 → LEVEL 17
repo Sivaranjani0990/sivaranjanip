@@ -1,0 +1,11 @@
+In this level, the password for the next level is obtained by scanning for an SSL service on an open port and connecting to it.
+
+Login to Bandit Level 16 using SSH:ssh bandit16@bandit.labs.overthewire.org -p 2220
+After login, the current working directory is the home directory of bandit16.
+->Scan for open ports on localhost:nmap localhost
+Identify the port running the SSL service and connect using openssl:
+->openssl s_client -connect localhost:<port>
+Enter the current password if prompted.
+The SSL service outputs the password for the next level.
+
+->Password for Level 17:EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
