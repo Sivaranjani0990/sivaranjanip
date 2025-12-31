@@ -1,0 +1,23 @@
+In this level, the login shell converts all commands to uppercase, which prevents normal command execution. The password for the next level is stored in the home directory of the next user.
+
+Login to Bandit Level 32 using SSH:ssh bandit32@bandit.labs.overthewire.org -p 2220
+After login, the system presents a restricted shell that converts all input to uppercase.
+To escape the restricted behavior, start a new shell using the full path:
+-> /bin/bash
+This opens a normal bash shell.
+
+Check the current user:
+-> whoami
+
+Switch to the next level user using the known password:su bandit33
+
+Navigate to the home directory and list the files:
+
+-> cd ~
+   ls
+
+A file named README.txt is present.
+Read the contents of the file:cat README.txt
+The file contains the password for the next level.
+
+Password for Level 33:odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
