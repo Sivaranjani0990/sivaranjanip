@@ -21,4 +21,4 @@ git commit -m "add key file"
 Push the commit to the repository:git push
 After a successful push, the server outputs the password for the next level.
 
-Password for Level 32:309RfhqyAlVBEZpVb6LYStshZoqoSx5K 
+Password for Level 32: 309RfhqyAlVBEZpVb6LYStshZoqoSx5K 
